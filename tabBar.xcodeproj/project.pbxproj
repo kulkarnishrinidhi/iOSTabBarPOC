@@ -12,6 +12,13 @@
 		F618BF7B1F2364C0004F36FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F618BF791F2364C0004F36FB /* Main.storyboard */; };
 		F618BF7D1F2364C0004F36FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F618BF7C1F2364C0004F36FB /* Assets.xcassets */; };
 		F618BF801F2364C0004F36FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F618BF7E1F2364C0004F36FB /* LaunchScreen.storyboard */; };
+		F618BF891F2368EE004F36FB /* LabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF871F2368EE004F36FB /* LabelCollectionViewCell.swift */; };
+		F618BF8A1F2368EE004F36FB /* LabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F618BF881F2368EE004F36FB /* LabelCollectionViewCell.xib */; };
+		F618BF8F1F237189004F36FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF8E1F237189004F36FB /* MainViewController.swift */; };
+		F618BF911F23719E004F36FB /* BasePageChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF901F23719E004F36FB /* BasePageChildViewController.swift */; };
+		F618BF931F2371BF004F36FB /* SpecificBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF921F2371BF004F36FB /* SpecificBaseViewController.swift */; };
+		F618BF951F2372C0004F36FB /* SideScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF941F2372C0004F36FB /* SideScrollViewController.swift */; };
+		F618BF971F238A19004F36FB /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F618BF961F238A19004F36FB /* HelloWorldViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		F618BF7C1F2364C0004F36FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F618BF7F1F2364C0004F36FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F618BF811F2364C0004F36FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F618BF871F2368EE004F36FB /* LabelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		F618BF881F2368EE004F36FB /* LabelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelCollectionViewCell.xib; sourceTree = "<group>"; };
+		F618BF8E1F237189004F36FB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F618BF901F23719E004F36FB /* BasePageChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageChildViewController.swift; sourceTree = "<group>"; };
+		F618BF921F2371BF004F36FB /* SpecificBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificBaseViewController.swift; sourceTree = "<group>"; };
+		F618BF941F2372C0004F36FB /* SideScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideScrollViewController.swift; sourceTree = "<group>"; };
+		F618BF961F238A19004F36FB /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,45 @@
 		F618BF741F2364C0004F36FB /* tabBar */ = {
 			isa = PBXGroup;
 			children = (
-				F618BF751F2364C0004F36FB /* AppDelegate.swift */,
+				F618BF8B1F237081004F36FB /* ViewControllers */,
+				F618BF8D1F237097004F36FB /* Application */,
+				F618BF8C1F23708B004F36FB /* CollectionViewCells */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
+		F618BF8B1F237081004F36FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				F618BF771F2364C0004F36FB /* ViewController.swift */,
+				F618BF8E1F237189004F36FB /* MainViewController.swift */,
+				F618BF901F23719E004F36FB /* BasePageChildViewController.swift */,
+				F618BF921F2371BF004F36FB /* SpecificBaseViewController.swift */,
+				F618BF941F2372C0004F36FB /* SideScrollViewController.swift */,
+				F618BF961F238A19004F36FB /* HelloWorldViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F618BF8C1F23708B004F36FB /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F618BF871F2368EE004F36FB /* LabelCollectionViewCell.swift */,
+				F618BF881F2368EE004F36FB /* LabelCollectionViewCell.xib */,
+			);
+			name = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		F618BF8D1F237097004F36FB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F618BF751F2364C0004F36FB /* AppDelegate.swift */,
 				F618BF791F2364C0004F36FB /* Main.storyboard */,
 				F618BF7C1F2364C0004F36FB /* Assets.xcassets */,
 				F618BF7E1F2364C0004F36FB /* LaunchScreen.storyboard */,
 				F618BF811F2364C0004F36FB /* Info.plist */,
 			);
-			path = tabBar;
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +172,7 @@
 				F618BF801F2364C0004F36FB /* LaunchScreen.storyboard in Resources */,
 				F618BF7D1F2364C0004F36FB /* Assets.xcassets in Resources */,
 				F618BF7B1F2364C0004F36FB /* Main.storyboard in Resources */,
+				F618BF8A1F2368EE004F36FB /* LabelCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F618BF891F2368EE004F36FB /* LabelCollectionViewCell.swift in Sources */,
 				F618BF781F2364C0004F36FB /* ViewController.swift in Sources */,
+				F618BF931F2371BF004F36FB /* SpecificBaseViewController.swift in Sources */,
 				F618BF761F2364C0004F36FB /* AppDelegate.swift in Sources */,
+				F618BF971F238A19004F36FB /* HelloWorldViewController.swift in Sources */,
+				F618BF951F2372C0004F36FB /* SideScrollViewController.swift in Sources */,
+				F618BF8F1F237189004F36FB /* MainViewController.swift in Sources */,
+				F618BF911F23719E004F36FB /* BasePageChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +354,7 @@
 				F618BF861F2364C0004F36FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
